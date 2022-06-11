@@ -1,0 +1,54 @@
+*{
+    background: #191919;
+    position: relative;
+}
+.contianer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.earth {
+    width: 150px;
+    height: 150px;
+    background-color: #4f77ff;
+    border-radius: 50%;
+    margin: 75px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+    
+}
+/* .earth:hover .circle {
+    left: 150px;
+} */
+.earth div {
+    width: 100%;
+    height: 10px;
+    background-color: #191919;
+    
+}
+div .circle {
+    position: absolute;
+    border-radius: 50%;
+    width: 150px;
+    height: 175px;
+    left: -50px;
+    background: none;
+    border: 10px solid;
+    -webkit-box-reflect: right -90px;
+    /* transition: 4s; */
+    animation: mymove 5s infinite;
+    
+}
+@keyframes mymove {
+    0% {left: -50px;}
+    75% {left: 150px;}
+    100% {left: -50%;}
+    }
+div .v-line {
+    position: absolute;
+    transform: rotate(90deg);
+}
